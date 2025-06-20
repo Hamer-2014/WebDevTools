@@ -676,6 +676,14 @@ body.dark-mode .tool-icon {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tags-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .insight-tags .tag {
@@ -685,6 +693,33 @@ body.dark-mode .tool-icon {
     border-radius: 15px;
     font-size: 0.8rem;
     font-weight: 500;
+}
+
+.visit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.visit-btn:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(74, 222, 128, 0.3);
+    color: white;
+}
+
+.visit-btn i {
+    font-size: 0.8rem;
 }
 
 .insights-cta {
