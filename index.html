@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>站长入门工具大全 - Webmaster Tools Collection</title>
+    <meta name="description" content="为站长和开发者提供从建站到变现的完整工具大全，涵盖域名注册、网站建设、SEO优化、流量分析等全流程工具">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="#4ade80"/>
+                        <rect x="6" y="6" width="20" height="16" rx="2" fill="white"/>
+                        <rect x="8" y="9" width="6" height="2" fill="#4ade80"/>
+                        <rect x="8" y="12" width="8" height="1" fill="#86efac"/>
+                        <rect x="8" y="14" width="10" height="1" fill="#86efac"/>
+                        <rect x="8" y="16" width="7" height="1" fill="#86efac"/>
+                        <circle cx="22" cy="18" r="3" fill="#16a34a"/>
+                        <path d="M20.5 18L21.5 19L23.5 17" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h1>站长入门工具大全</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">首页</a>
+                    <a href="#tools">工具</a>
+                    <a href="insights.html">生财精华</a>
+                    <a href="#about">关于</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h2>一站式建站工具集合</h2>
+                <p>从域名注册到网站变现，为站长提供建站全流程的精选工具，助力快速搭建成功网站</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索工具... (Ctrl+K)">
+                    <button onclick="searchTools()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools-section" id="tools">
+            <div class="container">
+                <!-- 需求收集与关键词调研 -->
+                <div class="category" data-category="research">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="21 21l-4.35-4.35"/>
+                        </svg>
+                        需求收集与关键词调研
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <h4>Google关键词工具</h4>
+                            </div>
+                            <p>Google Trends是免费的关键词研究工具，提供搜索趋势数据和关键词建议。帮助发现相关关键词，了解搜索热度变化趋势，是SEO优化和内容策划的必备工具。</p>
+                            <a href="https://trends.google.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h4>Toolify 检索</h4>
+                            </div>
+                            <p>Toolify是专业的AI工具发现平台，收录了数万款AI工具，提供详细的功能介绍、用户评价和收入数据。帮助开发者了解AI工具市场趋势，寻找合适的工具和商业机会。</p>
+                            <a href="https://www.toolify.ai/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h4>关键词难度分析</h4>
+                            </div>
+                            <p>专业的关键词竞争度分析工具，评估关键词的SEO难度和排名可能性。通过分析竞争对手的实力、反向链接质量等因素，帮助选择最佳的关键词策略，提高搜索排名效果。</p>
+                            <a href="https://kwfinder.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 上站必备工具 -->
+                <div class="category" data-category="essential">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="9" cy="9" r="2"/>
+                            <path d="21 15l-3.086-3.086a2 2 0 00-2.828 0L6 21"/>
+                        </svg>
+                        上站必备工具
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h4>域名查询 - Lean</h4>
+                            </div>
+                            <p>Lean Domain Search是一个快速高效的域名搜索工具，基于关键词自动生成大量域名建议。支持实时可用性检查，界面简洁直观，是域名头脑风暴的理想工具。</p>
+                            <a href="https://lean-domain-search.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h4>域名查询 - Query</h4>
+                            </div>
+                            <p>专业的域名数据库查询工具，提供详细的域名信息包括注册历史、过期时间、DNS记录等。支持批量查询和高级筛选，适合域名投资者和SEO专家使用。</p>
+                            <a href="https://www.domainsdb.info/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h4>域名查询 - Instant</h4>
+                            </div>
+                            <p>Instant Domain Search提供闪电般的域名可用性检查，边输入边搜索，实时显示结果。支持多种顶级域名扩展，界面现代化，用户体验极佳。</p>
+                            <a href="https://instantdomainsearch.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>域名注册 - Spaceship</h4>
+                            </div>
+                            <p>Spaceship是现代化的域名注册和管理平台，提供竞争力的价格和优质的服务。支持多种支付方式，管理界面简洁易用，特别适合个人开发者和小团队。</p>
+                            <a href="https://www.spaceship.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-piggy-bank"></i>
+                                </div>
+                                <h4>域名注册 - Porkbun</h4>
+                            </div>
+                            <p>Porkbun以其经济实惠的价格和优质服务闻名，提供透明的定价无隐藏费用。支持免费WHOIS隐私保护，SSL证书等增值服务，是预算有限用户的首选。</p>
+                            <a href="https://porkbun.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <h4>域名注册 - Namecheap</h4>
+                            </div>
+                            <p>Namecheap是全球知名的域名注册商，以可靠的服务和合理的价格著称。提供完善的域名管理工具、DNS服务和客户支持，是企业和个人用户的信赖之选。</p>
+                            <a href="https://www.namecheap.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <h4>代码托管 - GitHub</h4>
+                            </div>
+                            <p>GitHub是全球最大的代码托管平台，提供Git版本控制、协作开发、项目管理等功能。支持公开和私有仓库，内置CI/CD、Issue跟踪、Wiki等工具，是开发者必备平台。</p>
+                            <a href="https://github.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <h4>网站托管 - Cloudflare</h4>
+                            </div>
+                            <p>Cloudflare提供全球CDN、DNS解析、DDoS防护和SSL证书等服务。免费套餐包含基础的网站加速和安全防护功能，付费版本提供更高级的性能优化和安全特性。</p>
+                            <a href="https://www.cloudflare.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-triangle"></i>
+                                </div>
+                                <h4>前端部署 - Vercel</h4>
+                            </div>
+                            <p>Vercel是专为前端应用设计的部署平台，支持Next.js、React、Vue等框架。提供零配置部署、边缘函数、实时预览和团队协作功能，特别适合现代Web应用。</p>
+                            <a href="https://vercel.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <h4>Search Console</h4>
+                            </div>
+                            <p>Google Search Console是免费的网站监控工具，帮助了解网站在Google搜索中的表现。提供索引状态、搜索查询数据、页面体验报告和技术问题诊断功能。</p>
+                            <a href="https://search.google.com/search-console/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>Google Analytics</h4>
+                            </div>
+                            <p>Google Analytics是强大的网站流量分析工具，提供详细的用户行为数据、转化跟踪和多维度分析报告。支持自定义事件、目标设置和电商跟踪功能。</p>
+                            <a href="https://analytics.google.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <h4>Bing Webmaster</h4>
+                            </div>
+                            <p>Bing Webmaster Tools是微软提供的网站管理工具，帮助优化网站在Bing搜索引擎中的表现。提供网站提交、索引监控、关键词数据和SEO建议功能。</p>
+                            <a href="https://www.bing.com/webmasters/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 善用黑科技工具 -->
+                <div class="category" data-category="ai-tools">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                            <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
+                            <path d="M12 21c0-1-1-3-3-3s-3 2-3 3 1 3 3 3 3-2 3-3"/>
+                        </svg>
+                        善用黑科技工具
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h4>bolt.new</h4>
+                            </div>
+                            <p>Bolt.new是革命性的AI全栈开发平台，能够通过自然语言描述快速生成完整的Web应用。支持React、Vue、Svelte等框架，提供实时编辑和即时部署功能，大幅提升开发效率。</p>
+                            <a href="https://bolt.new/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h4>Cursor</h4>
+                            </div>
+                            <p>Cursor是新一代AI代码编辑器，深度集成GPT-4模型，提供智能代码补全、重构建议和错误修复。支持多种编程语言，具备优秀的代码理解能力，是AI辅助编程的最佳选择。</p>
+                            <a href="https://cursor.sh/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-copy"></i>
+                                </div>
+                                <h4>same.new</h4>
+                            </div>
+                            <p>Same.new是创新的网站克隆和定制工具，能够快速复制任何网站的设计和功能，然后根据需求进行个性化修改。适合快速原型开发和灵感借鉴，大幅缩短项目启动时间。</p>
+                            <a href="https://same.new/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>Claude 3.7 Sonnet</h4>
+                            </div>
+                            <p>Claude是Anthropic开发的先进AI助手，擅长代码生成、技术文档编写和复杂问题解决。具备强大的推理能力和丰富的编程知识，支持多种编程语言和框架，是开发者的得力助手。</p>
+                            <a href="https://claude.ai/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <h4>GitHub Copilot</h4>
+                            </div>
+                            <p>GitHub Copilot是基于OpenAI Codex的AI编程助手，提供实时代码建议和自动补全功能。支持数十种编程语言，能够理解上下文并生成高质量代码，显著提高编程效率。</p>
+                            <a href="https://github.com/features/copilot" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-magic"></i>
+                                </div>
+                                <h4>V0.dev</h4>
+                            </div>
+                            <p>V0是Vercel推出的AI界面生成工具，能够根据文本描述快速生成React组件和完整的网页界面。支持Tailwind CSS、shadcn/ui等现代UI库，生成的代码质量高且可直接使用。</p>
+                            <a href="https://v0.dev/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-cubes"></i>
+                                </div>
+                                <h4>BASE44</h4>
+                            </div>
+                            <p>BASE44是强大的无代码AI应用构建平台，允许用户通过自然语言描述快速构建完整的Web应用。支持数据库设计、API创建、用户界面生成等功能，适合快速原型开发。</p>
+                            <a href="https://base44.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                                <h4>Sedo</h4>
+                            </div>
+                            <p>Sedo是全球最大的域名交易市场，拥有超过1900万个待售域名。提供域名评估、经纪服务、拍卖功能和安全的交易保障，是域名投资者和企业购买优质域名的首选平台。</p>
+                            <a href="https://sedo.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                </div>
+                                <h4>Wix</h4>
+                            </div>
+                            <p>Wix是领先的AI网站构建平台，提供拖拽式编辑器和AI网站生成功能。支持电商、博客、作品集等多种网站类型，内置SEO工具、营销功能和丰富的应用市场。</p>
+                            <a href="https://www.wix.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 竞品调研 -->
+                <div class="category" data-category="research-tools">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                        </svg>
+                        竞品调研
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-chart-area"></i>
+                                </div>
+                                <h4>AITDK - 流量分析</h4>
+                            </div>
+                            <p>AITDK是专业的AI驱动网站分析工具，提供详细的流量数据、竞争对手分析和SEO洞察。支持批量网站监控，帮助了解市场趋势和竞争态势，制定有效的营销策略。</p>
+                            <a href="https://aitdk.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-link"></i>
+                                </div>
+                                <h4>Ahrefs</h4>
+                            </div>
+                            <p>Ahrefs是世界领先的SEO工具套件，提供全面的网站分析功能包括反向链接分析、关键词研究、竞争对手监控和内容审核。拥有庞大的链接数据库和准确的排名跟踪功能。</p>
+                            <a href="https://ahrefs.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4>SEMrush</h4>
+                            </div>
+                            <p>SEMrush是综合性的数字营销工具平台，专注于竞争对手分析和市场洞察。提供关键词研究、广告分析、社交媒体监控和品牌监测功能，是营销专家的必备工具。</p>
+                            <a href="https://www.semrush.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 关键词工具 -->
+                <div class="category" data-category="keyword-tools">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 7h6l-6 10h6"/>
+                        </svg>
+                        关键词工具
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <h4>Google Trends</h4>
+                            </div>
+                            <p>Google Trends是免费的趋势分析工具，显示关键词和话题在Google搜索中的热度变化。支持地理位置过滤、时间范围设置和相关主题发现，是内容创作和市场研究的重要参考。</p>
+                            <a href="https://trends.google.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 变现工具 -->
+                <div class="category" data-category="monetization">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        变现工具
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <h4>Google AdSense</h4>
+                            </div>
+                            <p>Google AdSense是最受欢迎的网站广告变现平台，通过在网站展示相关广告来产生收入。提供多种广告格式、智能定价和详细的收入报告，是网站变现的首选方案。</p>
+                            <a href="https://www.google.com/adsense/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-ad"></i>
+                                </div>
+                                <h4>Adsterra</h4>
+                            </div>
+                            <p>Adsterra是全球领先的广告网络平台，提供多样化的广告格式包括展示广告、弹窗、推送通知等。支持全球流量变现，具有竞争力的收益率和及时的付款周期。</p>
+                            <a href="https://adsterra.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-coins"></i>
+                                </div>
+                                <h4>Monetag</h4>
+                            </div>
+                            <p>Monetag是专业的网站变现解决方案提供商，结合广告展示和电商功能帮助网站实现多元化收入。提供智能优化算法和个性化推荐系统，最大化变现效果。</p>
+                            <a href="https://monetag.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 赞赏工具 -->
+                <div class="category" data-category="donation">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                        赞赏工具
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-coffee"></i>
+                                </div>
+                                <h4>Ko-fi</h4>
+                            </div>
+                            <p>Ko-fi是简单易用的创作者支持平台，允许粉丝通过"请喝咖啡"的形式支持喜爱的创作者。支持一次性打赏、月度订阅和商品销售，界面友好且无平台手续费。</p>
+                            <a href="https://ko-fi.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-mug-hot"></i>
+                                </div>
+                                <h4>Buy Me a Coffee</h4>
+                            </div>
+                            <p>Buy Me a Coffee是全球知名的创作者资助平台，提供简单的打赏功能和会员订阅服务。支持多种支付方式，内置社区功能，帮助创作者与粉丝建立更紧密的联系。</p>
+                            <a href="https://www.buymeacoffee.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <h4>Gumroad</h4>
+                            </div>
+                            <p>Gumroad是专业的数字产品销售平台，主要面向创作者销售电子书、软件、音乐、课程等数字内容。提供完整的电商功能包括支付处理、文件托管和销售分析。</p>
+                            <a href="https://gumroad.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收款工具 -->
+                <div class="category" data-category="payment">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                        收款工具
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <h4>Paddle</h4>
+                            </div>
+                            <p>Paddle是专为SaaS和数字产品设计的全栈支付解决方案，提供支付处理、税务管理、订阅计费和收入恢复功能。支持全球支付方式，简化国际业务的复杂性。</p>
+                            <a href="https://paddle.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-stripe"></i>
+                                </div>
+                                <h4>Stripe</h4>
+                            </div>
+                            <p>Stripe是全球领先的在线支付处理平台，为各种规模的企业提供安全、可靠的支付解决方案。支持信用卡、数字钱包等多种支付方式，具有强大的API和开发工具。</p>
+                            <a href="https://stripe.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-lemon"></i>
+                                </div>
+                                <h4>Lemon Squeezy</h4>
+                            </div>
+                            <p>Lemon Squeezy是新兴的数字产品销售平台，专为创作者和开发者设计。提供简单的产品销售、订阅管理和客户服务功能，支持全球支付且界面现代化。</p>
+                            <a href="https://lemonsqueezy.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-wallet"></i>
+                                </div>
+                                <h4>Creem</h4>
+                            </div>
+                            <p>Creem是专注于创作者经济的支付和订阅管理平台，提供灵活的收费模式和强大的会员管理功能。支持内容分层、社区建设和粉丝互动，帮助创作者建立可持续的收入模式。</p>
+                            <a href="https://creem.io/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 数据分析工具 -->
+                <div class="category" data-category="analytics">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                        数据分析工具
+                    </h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <h4>Microsoft Clarity</h4>
+                            </div>
+                            <p>Microsoft Clarity是免费的用户行为分析工具，提供热力图、会话录制和用户行为洞察功能。帮助了解用户在网站上的真实行为，识别可用性问题并优化用户体验。</p>
+                            <a href="https://clarity.microsoft.com/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <h4>Plausible</h4>
+                            </div>
+                            <p>Plausible是注重隐私的轻量级网站分析工具，提供简洁的数据界面和基础的流量统计功能。不使用Cookie，符合GDPR法规，是Google Analytics的隐私友好替代方案。</p>
+                            <a href="https://plausible.io/" target="_blank" class="tool-link">访问工具</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="about">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>站长入门工具大全致力于为新手站长和开发者提供建站全流程的优质工具资源。我们精心筛选每一个工具，从域名选择、网站搭建到SEO优化、流量变现，为您的建站之路保驾护航。</p>
+            </div>
+            <div class="footer-section">
+                <h4>工具分类</h4>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="filterByCategory('research')">需求调研工具</a></li>
+                    <li><a href="javascript:void(0)" onclick="filterByCategory('essential')">建站必备工具</a></li>
+                    <li><a href="javascript:void(0)" onclick="filterByCategory('ai-tools')">AI效率工具</a></li>
+                    <li><a href="javascript:void(0)" onclick="filterByCategory('analytics')">数据分析工具</a></li>
+                    <li><a href="javascript:void(0)" onclick="filterByCategory('monetization')">网站变现工具</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>联系我们</h4>
+                <div class="social-links">
+                    <a href="https://github.com/Hamer-2014/WebDevTools" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:xie850069187@gmail.com" title="邮箱"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 站长入门工具大全 - 助力每一个网站梦想的实现</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
